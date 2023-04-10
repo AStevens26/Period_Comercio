@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/*CABECERA*/
+.header{
+    width: 100%;
+}
+.header .header-info{
+    color: rgb(7, 7, 125);
+    background-color: rgba(223, 223, 223, 0.733);
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+}
+.header .navbar{
+    background-color: rgb(255, 220, 42);
+    display: flex;
+    justify-content: space-around;
+}
+.header .navbar .bars{
+    display: none;
+}
+.header .navbar img{
+    width: 200px;
+}
+.header .navbar .lista{
+    
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.header .navbar .lista li{
+    padding: 10px;
+
+}
+.header .navbar .lista li:hover {
+    background-color: rgba(0, 0, 0, 0.373);
+    color: azure;
+
+}
+.header .navbar ul li a{
+    color: rgb(95, 95, 95);
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.header .navbar ul li a:hover{
+    color: aliceblue;
+}
+
+section{
+    height: 500px;
+    width: 100%;
+}
+
+/*PIE DE PAGINA*/
+
+.pie{
+    background-color: rgb(51, 51, 51);
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+.pie .container{
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+}
+.pie .container .info {
+    padding: 20px 0px;
+}
+.pie .container .info img{
+    width: 300px;
+}
+.pie .container .info ul{
+    padding: 0px 50px;
+}
+.pie .container .info ul li{
+    justify-content: left;
+    text-align: left;
+    margin: 5px 0px;
+}
+.pie .container .info ul li i{
+    color: rgb(255, 192, 34);
+    font-size: 15px;
+    margin-right: 10px;
+}
+.pie .container .info ul li a{
+    color: rgb(172, 172, 172);
+    font-size: 15px;
+    margin-right: 10px;
+    font-size: 13px;
+}
+.pie .container .info ul li a:hover{
+    color: rgb(255, 255, 255);
+}
+.pie .container .info ul li img{
+    width: 100px;
+    margin: 20px 50px;
+}
+.pie .container .extra-info{
+    display:flex ;
+    flex-flow: wrap;
+    justify-content: center;
+    text-align: center;
+    margin-top: 40px;
+}
+.pie .container .extra-info .fo{
+    width: 200px;
+    padding: 10px 10px;
+}
+.pie .container .extra-info .fo h2{
+    font-size: 18px;
+    color: aliceblue;
+}
+.pie .container .extra-info .fo ul {
+    margin-top: 10px;
+    
+}
+.pie .container .extra-info .fo hr {
+margin: 10px 10%;    
+}
+.pie .container .extra-info .fo ul li{
+    padding: 3px 0;
+    font-size: 10px;
+    justify-content: left;
+    text-align: left;
+    color: rgb(126, 126, 126);
+    
+}
+.pie .container .extra-info .fo ul li a{
+    color: rgb(167, 167, 168);
+    
+}
+.pie .container .extra-info .fo ul li a:hover{
+    color: rgb(255, 255, 255);
+    
+}
+.visitetambien {
+    margin:20px 30%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.visitetambien ul{
+    margin: 10px 0;
+    display: flex;
+    flex-flow:wrap ;
+    justify-content: center;
+}
+.visitetambien ul li {
+    color: aliceblue;
+    margin: 5px 10px;
+}
+.visitetambien ul li a{
+    color: rgb(224, 215, 131);
+    font-weight: 400;
+    font-family:monospace;
+}
+.visitetambien ul li a:hover{
+    color: rgb(245, 245, 244);
+    background-color: rgba(0, 0, 0, 0.215);
+    border-radius: 1px;
+}
+.pie hr{
+    margin: 10px 30%;
+
+}
+
+@media (max-width:768px) {
+    .header .header-info{
+        color: rgb(7, 7, 125);
+        background-color: rgba(255, 227, 227, 0.733);
+        padding: 10px 0;
+        display: block;
+        padding: 10px;
+        justify-content: center;
+        text-align: center;
+        font-weight: bold;
+    }
+    .header .navbar .bars{
+        display: flex;
+        align-items: center;
+        border: none;
+        background: none;
+    }
+    .header .navbar .bars i{
+        font-size: 30px;
+    }
+    .header .navbar .lista{
+        width: 100%;
+        position: absolute;
+        margin-top: 75px;
+        background-color: rgb(46, 46, 46);
+        transition: 0.7s;
+        overflow: hidden;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    .lista.active{
+        right: 0;
+    }
+    .lista {
+        display:block;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transform: 0.5s;
+        opacity: 0;
+    }
+    .lista.active{
+        opacity: 1;
+    }
+    
+    .header .navbar .lista li:hover{
+        width: 100%;
+        background-color: rgba(196, 195, 195, 0.373);
+        height: auto;
+    }
+
+}
+
