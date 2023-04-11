@@ -55,163 +55,168 @@
 .header .navbar ul li a:hover{
     color: aliceblue;
 }
+/**/
 
-/* section{
-    height: 500px;
+/*CONTENIDO*/
+main{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-} */
+    background-color: aqua;
+    padding: 0 10%;
 
+}
+main img{
+    width: 100%;
+    height: auto;
+
+}
+main .parte1{
+    
+    display: flex;
+    
+    background-color: aquamarine;
+}
+main .parte1 img{
+    width: 100%;
+
+}
+
+.parte2 {
+    width: 500px;
+    background-color: blueviolet;
+}
+.parte2 .parte2_1{
+    display: flex;
+}
 /*PIE DE PAGINA*/
 
-/* .pie{
-    background-color: rgb(51, 51, 51);
-    height: auto;
-    width: 100%;
+.footer{
+    background-color: rgb(46, 46, 46);
+    padding:0 5%;
+    align-items: center;
     justify-content: center;
     text-align: center;
-}
-.pie .container{
-    display: flex;
-    flex-wrap: wrap;
-    height: auto;
-    justify-content: center;
-    text-align: center;
-}
-.pie .container .info {
-    padding: 20px 0px;
-}
-.pie .container .info img{
-    width: 300px;
-}
-.pie .container .info ul{
-    padding: 0px 50px;
-}
-.pie .container .info ul li{
-    justify-content: left;
-    text-align: left;
-    margin: 5px 0px;
-}
-.pie .container .info ul li i{
-    width: 10px;
-    color: rgb(255, 192, 34);
-    font-size: 15px;
-    margin-right: 10px;
-}
-.pie .container .info ul li i img{
-   width: 100%;
-} */
-.pie__footer{
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    padding: 20px;
-}
-.div__footer__parte1{
-    padding: 100px;
-    background-color: blue;
-}
-.div__footer__parte1 img{
-    width: 100%;
-}
-.div__footer__parte1 i .img1{
-    width: 10%;
-    background-color: aqua;
-}
-.pieFinal{
-    background-color: red;
-    text-align: center;
-    padding: 10px 0px;
-}
-.pie__footer{
-    background-color: aqua;
 }
 
-/* .extra-info{
-    display: grid;
-    grid-template-columns:  25% 25% 25% 25%;
-} */
-/* .pie .container .info ul li a{
-    color: rgb(172, 172, 172);
-    font-size: 15px;
-    margin-right: 10px;
-    font-size: 13px;
-}
-.pie .container .info ul li a:hover{
-    color: rgb(255, 255, 255);
-}
-.pie .container .info ul li img{
-    width: 100px;
-    margin: 20px 50px;
-}
-.pie .container .extra-info{
-    display:flex ;
-    flex-flow: wrap;
+.footer_parte1{
+    display: flex;
     justify-content: center;
-    text-align: center;
-    margin-top: 40px;
 }
-.pie .container .extra-info .fo{
-    width: 200px;
-    padding: 10px 10px;
-}
-.pie .container .extra-info .fo h2{
-    font-size: 18px;
-    color: aliceblue;
-}
-.pie .container .extra-info .fo ul {
-    margin-top: 10px;
-    
-}
-.pie .container .extra-info .fo hr {
-margin: 10px 10%;    
-}
-.pie .container .extra-info .fo ul li{
-    padding: 3px 0;
-    font-size: 10px;
-    justify-content: left;
-    text-align: left;
-    color: rgb(126, 126, 126);
-    
-}
-.pie .container .extra-info .fo ul li a{
-    color: rgb(167, 167, 168);
-    
-}
-.pie .container .extra-info .fo ul li a:hover{
-    color: rgb(255, 255, 255);
-    
-}
-.visitetambien {
-    margin:20px 30%;
+.footer_parte1 .info1{
+    justify-content: center;
     align-items: center;
     text-align: center;
-    justify-content: center;
 }
-.visitetambien ul{
+.footer_parte1 .info1 .logo{
+    width: 350px;
     margin: 10px 0;
+}
+.footer_parte1 .info1 ul{
+    padding: 0 10%;
+}
+
+.footer_parte1 .info1 ul li{
     display: flex;
-    flex-flow:wrap ;
+    align-items: center;
+    margin:  10px;
+}
+.footer_parte1 .info1 ul li i{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+
+}
+.footer_parte1 .info1 ul li i img{
+    width: 100%;
+}
+.footer_parte1 .info1 ul li a{
+    color: rgb(173, 173, 173);
+    font-size: 13px;
+    font-weight: 700;
+}
+.footer_parte1 .info1 ul li a:hover{
+    color: aliceblue;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.footer_parte1 .info1 ul li a img{
+    width: 200px;
+    padding: 0px 20%;
+}
+.footer_parte1 .info2{
+    color: rgb(215, 215, 215);
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    padding: 30px;
+}
+
+.footer_parte1 .info2 .info{
+    margin: 20px;
+}
+.footer_parte1 .info2 .info h2{
+    font-size: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.footer_parte1 .info2  hr{
+    margin: 3% 10%;
+}
+.footer_parte1 .info2 .info ul li{
+    justify-content: left;
+    text-align: left;
+    font-size: 12px;
+    color: rgb(126, 126, 126);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    margin: 5px 0;
+}
+.footer_parte1 .info2 .info ul li a{
+    color: rgb(154, 154, 154);
+}
+.footer_parte1 .info2 .info ul li a:hover{
+    color: rgb(255, 255, 255);
+}
+.footer_parte2{
+    background-color: rgba(139, 140, 140, 0.084);
+    margin: 5% 10%;
+    
+}
+.footer_parte2 ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
 }
-.visitetambien ul li {
-    color: aliceblue;
-    margin: 5px 10px;
+.footer_parte2 ul li a{
+    color: rgb(255, 234, 140);
+    padding: 0px 20px;
 }
-.visitetambien ul li a{
-    color: rgb(224, 215, 131);
-    font-weight: 400;
-    font-family:monospace;
+.footer_parte2 ul li{
+    margin: 10px 5px;
 }
-.visitetambien ul li a:hover{
-    color: rgb(245, 245, 244);
-    background-color: rgba(0, 0, 0, 0.215);
-    border-radius: 1px;
+.footer_parte2 ul li a:hover{
+    color: rgb(255, 215, 16);
+    background-color: rgba(223, 221, 220, 0.418);
 }
-.pie hr{
-    margin: 10px 30%;
+.footer_final img{
+    position: absolute;
+    margin-top: -20px;
+    width: 40px;
+}
+.footer_final p{
+    padding: 30px 0;
+    color: rgb(141, 141, 141);
+    font-family: cursive;
+    font-weight: 700;
+    font-size: 15px;
+    
+}
 
-} */
 
-@media (max-width:768px) {
+
+
+@media (max-width:1024px) {
     .header .header-info{
         color: rgb(7, 7, 125);
         background-color: rgba(255, 227, 227, 0.733);
@@ -260,8 +265,21 @@ margin: 10px 10%;
         background-color: rgba(196, 195, 195, 0.373);
         height: auto;
     }
-    .pie .container .extra-info{
+    .footer_parte1{
+        display: flex;
         flex-direction: column;
+    }
+    .footer_parte1 .info1{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer_parte1 .info2{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer_parte1 .info2 .info ul li{
+        text-align: center;
+        font-size: 12px;
     }
 
 
