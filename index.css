@@ -7,20 +7,62 @@
 
 /*CABECERA*/
 .header{
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(239, 204, 4);
+}
+.header .img{
+    background-color: rgba(223, 223, 223, 0.733);
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+}
+.header .img img{
+    margin: 0 1px;
     width: 100%;
 }
+
 .header .header-info{
     color: rgb(7, 7, 125);
-    background-color: rgba(223, 223, 223, 0.733);
+    background-color: rgba(186, 186, 186, 0.733);
     padding: 10px 0;
     display: flex;
     justify-content: space-around;
     font-weight: bold;
 }
+.header .header_cabecera{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header .header_cabecera p{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px 10%;
+    border-top: 1px  solid rgb(27, 27, 27);
+    border-bottom: 1px  solid rgb(27, 27, 27);
+}
+.header .header_cabecera figure  figcaption{
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
 .header .navbar{
     background-color: rgb(255, 220, 42);
     display: flex;
     justify-content: space-around;
+}
+.header .navbar button{
+    margin-top: 20px;
+    width: 30px;
+    height: 30px;
+}
+.header .navbar button img{
+
+    width: 100%;
 }
 .header .navbar .bars{
     display: none;
@@ -59,37 +101,160 @@
 
 /*CONTENIDO*/
 main{
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+.cuerpo{
+    display:flex ;
     text-align: center;
     justify-content: center;
     align-items: center;
+
+
+}
+.cuerpo{
+    flex-wrap: grid;
+    grid-template-columns: 70% 30%;
+
+}
+.cuerpo .parte1{
+    justify-content: left;
+    text-align: left;
+}
+.cuerpo .parte1 p{
+    font-size: 20px;
+    background-color: rgb(76, 76, 76);
+    color: aliceblue;
+}
+.cuerpo .parte1 p span{
+    font-weight: 700;
+    margin-right: 10px;
+    color:yellow ;
+}
+.cuerpo .parte1 img{
     width: 100%;
-    background-color: aqua;
-    padding: 0 10%;
-
 }
-main img{
-    width: 100%;
-    height: auto;
-
+.cuerpo .parte1 h1{
+    padding: 30px;
+    font-size: 60px;
 }
-main .parte1{
-    
-    display: flex;
-    
-    background-color: aquamarine;
+.cuerpo .parte1 .bloques{
+    justify-content: center;
+    text-align: center;
+    display: grid;
+    padding: 5px 0;
+    grid-template-columns: 30% 30% 30%;
 }
-main .parte1 img{
-    width: 100%;
-
+.cuerpo .parte1 .bloques p {
+    font-size: 20px;
+    color: black;
+    background-color: white;
 }
-
+.cuerpo .parte1 .bloques p span{
+    color: rgb(0, 150, 153);
+}
+.cuerpo .parte1 figure{
+    padding: 10px 0;
+    margin: 5px 30px;
+    border-top: 1px solid;
+    border-bottom: 1px solid ;
+}
+.cuerpo .parte1 figure figcaption{
+    font-size: 10px;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 .parte2 {
-    width: 500px;
-    background-color: blueviolet;
-}
-.parte2 .parte2_1{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     display: flex;
 }
+.parte2 div{
+    padding: 20px 10px;
+}
+.parte2 div h2{
+    margin: 10px 50px;
+    font-size: 15px;
+    color:rgb(255, 255, 255);
+    background-color: rgb(49, 49, 49);
+}
+.parte2 div h3{
+    font-weight: 900;
+    font-size: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:rgb(0, 161, 120);
+}
+.parte2 div p{
+    padding: 0 30px;
+    font-size: 20px;
+    color:rgb(0, 0, 0);
+}
+.cuerpo_2{
+    border-left: solid 1px;
+}
+.cuerpo_2  figure figcaption{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 12px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+.cuerpo_2  figure  img{
+    width: 100%;
+}
+.cuerpo_2 .bloque .sub{
+    background-color: rgb(254, 254, 254);
+    color:rgb(0, 128, 128);
+    font-weight: bold;
+    font-size: 15px;
+    margin: 30px 0;
+}
+.cuerpo_2 .bloque{
+    padding: 30px 0;
+    text-align: left;
+    margin: 0px 15px;
+    border-bottom:solid 1px ;
+}
+.cuerpo_2 .bloque h1{
+    margin: 10px 0;
+    padding: 5px;
+    font-size: 25px;
+    text-align: left;
+}
+.cuerpo_2 .bloque .luces{
+    border: solid 1px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.cuerpo_2 .bloque .luces span{
+    position: absolute;
+    margin: -10px;
+    background-color: aliceblue;
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+main aside{
+    border: solid 2px rgb(89, 89, 89);
+    background-color: brown;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+main aside .publicidad{
+    background-color: aqua;
+}
+main aside  img{
+    width: 100%;
+}
+
+
 /*PIE DE PAGINA*/
 
 .footer{
@@ -145,12 +310,13 @@ main .parte1 img{
     width: 200px;
     padding: 0px 20%;
 }
-.footer_parte1 .info2{
-    color: rgb(215, 215, 215);
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    padding: 30px;
-}
+    .footer_parte1 .info2{
+        color: rgb(215, 215, 215);
+        display: flex;
+        display:wrap;
+        flex-wrap: wrap;
+        padding: 30px;
+    }
 
 .footer_parte1 .info2 .info{
     margin: 20px;
@@ -216,7 +382,7 @@ main .parte1 img{
 
 
 
-@media (max-width:1024px) {
+@media (max-width:967px) {
     .header .header-info{
         color: rgb(7, 7, 125);
         background-color: rgba(255, 227, 227, 0.733);
@@ -247,6 +413,17 @@ main .parte1 img{
         text-align: center;
         justify-content: center;
     }
+    
+    .header .img{
+        display: block;
+
+    }
+    .header .header_cabecera{
+        display: block;
+    }
+
+
+
     .lista.active{
         right: 0;
     }
