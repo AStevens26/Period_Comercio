@@ -88,7 +88,7 @@
 /**/
 /*CONTENIDO*/
 
-main,aside{
+main{
     display: grid;
     grid-template-columns: 80% 20%;
 }
@@ -178,16 +178,21 @@ main .articulos .cabecera2 p{
 
 main aside{
     border: solid 2px rgb(89, 89, 89);
-    background-color: brown;
     right: 0;
     width: 100%;
     height: 100%;
 }
-main aside .publicidad{
-    background-color: aqua;
-}
 main aside  img{
     width: 100%;
+}
+main aside div{
+    margin:20px 10px;
+}
+main aside div h1{
+    font-size: 15px;
+}
+main aside div p{
+    font-size: 10px;
 }
 /**/
 /*FOOTER*/
