@@ -87,9 +87,7 @@
 }
 /**/
 /*CONTENIDO*/
-main {
 
-}
 main,aside{
     display: grid;
     grid-template-columns: 80% 20%;
@@ -97,7 +95,123 @@ main,aside{
 main .articulos{
     padding: 10px 30px;
 }
+main .articulos .cabecera1{
+    justify-content: space-around;
+    display: flex;
+}
+main .articulos .cabecera2{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px 0;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+main .articulos .cabecera2 h2{ 
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px 0;
+    background-color: rgb(255, 201, 53);
+}
+main .articulo1 .principal .caja{
+    margin: 10px 0;
+    display: grid;
+    grid-template-columns: 35% 65%;
+}
+main .articulo1 .principal h1{
+    font-size: 70px;
+    padding: 20px;
+    text-align: center;
+}
 
+main .articulo1 .principal .bloque1 .columna{
+    display: flex;
+    text-align: justify;
+    text-indent: 15px;
+
+}
+main .articulo1 .principal .bloque1 .columna div{
+    padding: 10px;
+    display: grid;
+}
+main .articulo1 .principal .bloque1 .columna h3{
+    font-size: 10px;
+    font-weight: bold;
+    border: 1px solid;
+    margin: 10px 0 ;
+}
+main .articulo1 .principal .bloque1  h2{
+    font-size: 40px;
+    font-weight: 600;
+}
+.principal .caja .bloque2 {
+    display:block;
+}
+.principal .caja .bloque2 .bloque2_1{
+    display: flex;
+    width: 600px;
+    padding: 0 20px;
+}
+.principal .caja .bloque2 figure{
+    width: 100px;
+}
+.principal .caja .bloque2 img{
+    width: 100%;
+}
+.principal .caja .bloque2 .bloque2_1 div{
+    padding: 0 10px;
+}
+.principal .caja .bloque2 .bloque2_1 span{
+    color: rgb(4, 170, 114);
+    font-weight: bold;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+.principal .caja .bloque2 .columna{
+    display: flex;
+
+}
+.principal .caja .bloque2 .columna div{
+padding: 10px;
+display: flex;
+display: grid;
+}
+.principal .caja .bloque2 .columna p{
+    text-align: justify;
+    text-indent: 20px;
+
+    
+}
+.principal .caja .bloque2 .columna div h1{
+    font-size: 14px;
+    text-align: left;
+    padding: 0;
+    margin: 30px 0 10px 0;
+}
+.principal .caja .bloque2 .columna div h2{
+    font-size: 13px;
+    font-weight: bold;
+}
+.principal .caja .bloque2 .columna div h3{
+    font-size: 10px;
+
+}
+
+.secundario{
+    border-top: 1px solid;
+    padding: 10px 0;
+    display: flex;
+    grid-template-columns: 70% 30%;
+}
+.secundario div {
+    width: 100%;
+}
+.secundario figure img{
+    width: 100%;
+}
+.secundario .parrafo{
+    display: flex;
+}
+.secundario .parrafo p{
+    padding: 10px;
+}
 
 
 
@@ -175,8 +289,10 @@ main aside  img{
 .footer_parte1 .info2{
     color: rgb(215, 215, 215);
     display: flex;
-    display:wrap;
-    flex-wrap: wrap;
+    flex-flow:wrap ;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
     padding: 30px;
 }
 
